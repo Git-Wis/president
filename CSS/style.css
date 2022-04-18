@@ -1,0 +1,246 @@
+body {
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    background: rgba(144, 151, 148, 0.233);
+  }
+
+.navbar-brand img{
+    max-height: 35px;
+}
+
+header .row{
+    background: url(../image/background/clou-de-girofle-1080x480.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: calc(70vh - 50px);
+    color: whitesmoke;
+    animation: change 20s infinite ease-in-out;
+    /*-webkit-clip-path : polygon(0 0,100% 0,100% 100%,0 82%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 82%);*/
+}
+
+header .partenaire{
+    min-height: calc(70vh - 50px);
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    header .masq{
+        display: none;
+    }
+
+}
+
+div.corps{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../image/Fénérive-Est.Monument.2015.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes change{
+  0%{
+    background-image: url(../image/mer.jpg);
+  }
+  20%{
+    background-image: url(../image/st.jpg);
+  }
+  40%{
+    background-image: url(../image/background/clou-de-girofle-1080x480.jpg);
+  }
+  60%{
+    background-image: url(../image/ravoraha.jpg);
+  }
+  80%{
+    background-image: url(../image/background/Vanille_font.png);
+  }
+  100%{
+    background-image: url(../image/mer.jpg);
+  }
+}
+
+div.corps .container{
+  min-height: 900px;
+
+}
+
+div.corps .image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.kabary{
+    font-size: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #2470dc;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  
+  .form-control-dark {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+
+  /* Table of contents */
+  .bd-aside a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-right: .3125rem;
+    color: rgba(0, 0, 0, .65);
+    text-decoration: none;
+  }
+  
+  .bd-aside a:hover,
+  .bd-aside a:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: rgba(121, 82, 179, .1);
+  }
+  
+  .bd-aside .active {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .85);
+  }
+  
+  .bd-aside .btn {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    border: 0;
+  }
+  
+  .bd-aside .btn:hover,
+  .bd-aside .btn:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: rgba(121, 82, 179, .1);
+  }
+  
+  .bd-aside .btn:focus {
+    box-shadow: 0 0 0 1px rgba(121, 82, 179, .7);
+  }
+  
+  .bd-aside .btn::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform: rotate(180deg) translateX(-2px);
+    transform-origin: .5em 50%;
+  }
+  
+  .bd-aside .btn[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+  }
+
+ /* .bd-body{
+    margin: 0 100px 0 200px;
+  }*/
+
+@media (min-width: 1200px) {
+  .bd-aside,
+  .bd-body {
+    padding-top: 4rem;
+    grid-area: 1 / 3;
+    scroll-margin-top: 4rem;
+  }
+}
